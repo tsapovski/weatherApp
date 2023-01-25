@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="358.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.weatherapp.Controller">
+   <children>
+      <AnchorPane layoutY="-2.0" prefHeight="68.0" prefWidth="358.0">
+         <children>
+            <Text fontSmoothingType="LCD" layoutX="123.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Weather" wrappingWidth="113.0">
+               <font>
+                  <Font name="Rage Italic" size="36.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="city" layoutX="105.0" layoutY="66.0" prefHeight="34.0" prefWidth="156.0" promptText="Enter the name of the city" />
+      <Button fx:id="getData" layoutX="154.0" layoutY="118.0" mnemonicParsing="false" text="Search">
+         <font>
+            <Font name="Rage Italic" size="18.0" />
+         </font>
+      </Button>
+      <Text layoutX="82.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="weather data" wrappingWidth="214.0">
+         <font>
+            <Font name="Rage Italic" size="40.0" />
+         </font>
+      </Text>
+      <Text fx:id="temp_info" layoutX="26.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" text="temperature: ">
+         <font>
+            <Font name="Rage Italic" size="26.0" />
+         </font>
+      </Text>
+      <Text fx:id="temp_min" layoutX="22.0" layoutY="301.0" strokeType="OUTSIDE" strokeWidth="0.0" text="temperature minimum: ">
+         <font>
+            <Font name="Rage Italic" size="26.0" />
+         </font>
+      </Text>
+      <Text fx:id="temp_max" layoutX="26.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" text="temperature maximum: ">
+         <font>
+            <Font name="Rage Italic" size="26.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
