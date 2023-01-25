@@ -38,8 +38,8 @@ public class Controller {
                 if (!output.isEmpty()) {
                     JSONObject obj = new JSONObject(output);
                     temp_info.setText("temperature: " + obj.getJSONObject("main").getDouble("temp"));
-                    temp_max.setText("temperature minimum: " + obj.getJSONObject("main").getDouble("temp_min"));
-                    temp_min.setText("temperature maximum: " + obj.getJSONObject("main").getDouble("temp_max"));
+                    temp_min.setText("temperature minimum: " + obj.getJSONObject("main").getDouble("temp_min"));
+                    temp_max.setText("temperature maximum: " + obj.getJSONObject("main").getDouble("temp_max"));
 
                 }
             }
